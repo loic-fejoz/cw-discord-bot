@@ -1,0 +1,7 @@
+.git
+source-env.txt
+.env
+*.mp3
+*.wav
+Dockerfile
+target/
