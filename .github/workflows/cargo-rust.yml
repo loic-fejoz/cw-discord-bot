@@ -16,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install deps
+      run: apt-get install -y ffmpeg libasound2 libmp3lame0 libasound2-dev
     - name: Build
       run: cargo build --verbose
     - name: Run tests
